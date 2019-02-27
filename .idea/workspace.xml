@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="52f3f085-8db0-49aa-aa2e-ff619fbf978f" name="Default Changelist" comment="updates tennis game to enable player two scores">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TennisGame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TennisGame.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TennisGameTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TennisGameTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,7 +24,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="344" />
+          <entry key="Kotlin" value="360" />
           <entry key="PLAIN_TEXT" value="75" />
         </counts>
       </usages-collector>
@@ -57,8 +56,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/TennisGameTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="445">
-                  <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+                <state relative-caret-position="431">
+                  <caret line="103" column="38" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -90,8 +89,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/TennisGameTest.kt" />
         <option value="$PROJECT_DIR$/src/TennisGame.kt" />
+        <option value="$PROJECT_DIR$/src/TennisGameTest.kt" />
       </list>
     </option>
   </component>
@@ -128,7 +127,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551229652389" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551229712836" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -236,9 +235,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisGameTest_verifyGameExists - 2019.02.26 at 18h 52m 36s.xml">
-      <configuration name="TennisGameTest.verifyGameExists" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisGameTest - 2019.02.26 at 18h 54m 10s.xml">
       <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
@@ -264,6 +260,9 @@
       <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TennisGameTest - 2019.02.26 at 19h 05m 47s.xml">
+      <configuration name="TennisGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisGameTest - 2019.02.26 at 19h 07m 37s.xml">
       <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -315,17 +314,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TennisGameTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TennisGame.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TennisGameTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="103" column="38" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
         </state>
       </provider>
     </entry>

@@ -12,6 +12,8 @@ class TennisGame(val playerOneName: String, val playerTwoName: String) {
 
     private fun translateScore(score: Int): String {
         when (score) {
+            3 -> return "Forty"
+            2 -> return "Thirty"
             1 -> return "Fifteen"
             0 -> return "Love"
         }

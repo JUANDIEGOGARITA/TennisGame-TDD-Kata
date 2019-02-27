@@ -4,20 +4,18 @@ class TennisGame(private val playerOneName: String, private val playerTwoName: S
     private var playerTwoScore = 0
 
     fun getScore(): String {
-        if (hasWinner()) {
+        if (hasWinner())
             return playerWithHighestScore() + " wins"
-        }
 
-        if (hasAdvantage()) {
+        if (hasAdvantage())
             return "Advantage " + playerWithHighestScore()
-        }
 
         if (isDeuce())
             return "Deuce"
 
-        if (playerOneScore == playerTwoScore) {
+        if (playerOneScore == playerTwoScore)
             return translateScore(playerOneScore) + " all"
-        }
+
         return translateScore(playerOneScore) + "," + translateScore(playerTwoScore)
     }
 

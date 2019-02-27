@@ -81,6 +81,13 @@ class TennisGameTest {
         assertEquals("Nik wins", score)
     }
 
+    @Test
+    fun testPlayersAreDuce4() {
+        createScore(4, 4)
+        val score = game?.getScore()
+        assertEquals("Deuce", score)
+    }
+
     private fun createScore(playerOneBalls: Int, playerTwoBalls: Int) {
         for (i in 0 until playerOneBalls) {
             game?.playerOneScores()

@@ -32,4 +32,13 @@ class TennisGameTest {
         val score = game?.getScore()
         assertEquals("Fifteen,Love", score)
     }
+
+    @Test
+    fun testFifteenAll() {
+        game?.playerOneScores()
+        game?.playerTwoScores()
+
+        val score = game?.getScore()
+        assertEquals("Fifteen all", score)
+    }
 }

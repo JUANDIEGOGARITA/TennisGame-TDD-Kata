@@ -1,10 +1,12 @@
-class TennisGame(val playerOneName: String, val playerTwoName: String) {
+class TennisGame(private val playerOneName: String, private val playerTwoName: String) {
 
     private var playerOneScore = 0
     private var playerTwoScore = 0
 
     fun getScore(): String {
-
+        if (hasWinner()) {
+            return playerWithHighestScore() + " wins"
+        }
         if (isDeuce())
             return "Deuce"
 
@@ -14,9 +16,25 @@ class TennisGame(val playerOneName: String, val playerTwoName: String) {
         return translateScore(playerOneScore) + "," + translateScore(playerTwoScore)
     }
 
+
+    private fun playerWithHighestScore(): String {
+        return if (playerOneScore > playerTwoScore) {
+            playerOneName
+        } else {
+            playerTwoName
+        }
+    }
+
     private fun isDeuce(): Boolean {
         return playerOneScore >= 3 && playerTwoScore == playerOneScore
     }
+
+    private fun hasWinner(): Boolean {
+        if (playerTwoScore >= 4 && playerTwoScore >= playerOneScore + 2)
+            return true
+        return playerOneScore >= 4 && playerOneScore >= playerTwoScore + 2
+    }
+
     private fun translateScore(score: Int): String {
         when (score) {
             3 -> return "Forty"

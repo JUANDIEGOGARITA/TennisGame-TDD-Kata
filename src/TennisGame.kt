@@ -7,6 +7,11 @@ class TennisGame(private val playerOneName: String, private val playerTwoName: S
         if (hasWinner()) {
             return playerWithHighestScore() + " wins"
         }
+
+        if (hasAdvantage()) {
+            return "Advantage " + playerWithHighestScore()
+        }
+
         if (isDeuce())
             return "Deuce"
 
@@ -16,6 +21,12 @@ class TennisGame(private val playerOneName: String, private val playerTwoName: S
         return translateScore(playerOneScore) + "," + translateScore(playerTwoScore)
     }
 
+    private fun hasAdvantage(): Boolean {
+        if (playerTwoScore >= 4 && playerTwoScore == playerOneScore + 1)
+            return true
+        return playerOneScore >= 4 && playerOneScore == playerTwoScore + 1
+
+    }
 
     private fun playerWithHighestScore(): String {
         return if (playerOneScore > playerTwoScore) {
